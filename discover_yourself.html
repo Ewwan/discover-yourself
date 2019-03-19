@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" />
+	<head>
+		<meta charset="utf-8" />
+		<!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <![endif]-->
+		<title>Discover Yourself!</title>
+
+<style>
+
+body {
+  width: 100%;
+}
+
+div.containing {
+  width: 40vw;
+  height: 40vw;
+  border: 0.01px solid black;
+  position: relative;
+  top: 20vw;
+  right: 20vw;
+  bottom: 20vw;
+  left: 20vw;
+
+  margin: 3vw;
+
+  z-index: 1;
+}
+
+div.containing img {
+  width: 40vw;
+  height: 40vw;
+}
+
+div.box {
+    width: 20vw;
+    height: 20vw;
+    border: 0.01px solid black;
+    transition: transform 2s ease;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+div.box img {
+  width: 40vw;
+  height: 40vw;
+}
+
+div.one {
+  position:absolute;
+  top: 0vw;
+  left: 0vw;
+  overflow: hidden;
+}
+
+div.one img {
+  position:absolute;
+  top: 0vw;
+  left: 0vw;
+}
+
+div.two {
+  position:absolute;
+  top: 0vw;
+  right: 0vw;
+  overflow: hidden;
+}
+
+div.two img {
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
+}
+
+div.three {
+  position:absolute;
+  bottom: 0vw;
+  left: 0vw;
+
+  overflow: hidden;
+}
+
+div.three img {
+  position:absolute;
+  bottom: 0vw;
+  left: 0vw;
+}
+
+div.four {
+  position:absolute;
+  bottom: 0vw;
+  right: 0vw;
+
+  overflow: hidden;
+}
+
+div.four img {
+  position:absolute;
+  bottom: 0vw;
+  right: 0vw;
+}
+
+div.containing:hover div.one{
+  transform: translate(-20vw, -20vw);
+}
+
+div.containing:hover div.two {
+  transform: translate(20vw, -20vw);
+}
+
+div.containing:hover div.three {
+  transform: translate(-20vw, 20vw);
+}
+
+div.containing:hover div.four {
+  transform: translate(20vw, 20vw);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="containing">
+  <img src="images/winner.jpg" alt="winner">
+  <div class="one box"><img src="images/discover.jpg" alt="Discover yourself" /></div>
+  <div class="two box"><img src="images/discover.jpg" alt="Discover yourself" /></div>
+  <div class="three box"><img src="images/discover.jpg" alt="Discover yourself" /></div>
+  <div class="four box"><img src="images/discover.jpg" alt="Discover yourself" /></div>
+</div>
+
+</body>
+</html>
